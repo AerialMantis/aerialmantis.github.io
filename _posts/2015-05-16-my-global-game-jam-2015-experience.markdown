@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Global Game Jam 2015 Experience"
-date:   2015-11-21 12:00:00 +0000
+date:   2015-05-16 12:00:00 +0000
 categories: events gamedev
 ---
 
