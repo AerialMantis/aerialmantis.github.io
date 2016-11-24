@@ -1,45 +1,50 @@
-# jekyll-uno
+Jekyll Clean Dark
+============
 
-Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+This theme was created on top of Jekyll Clean theme by Scotte, you can view the original version in action [on his blog](https://scotte.github.io).
 
-> :warning:
-  This theme requires ruby and rubygems installed
+* Get it from [github](https://github.com/streetturtle/jekyll-clean-dark).
+* See the [live demo](http://pavelmakhov.com/jekyll-clean-dark).
+* See it [in action on my own blog](http://pavelmakhov.com).
 
-### Features
+This theme uses some parts of Twitter Bootstrap, which allows it to look nice on a mobile devices using a collapsable nav bar and hiding the
+sidebar.
 
-* Clean layout
-* Resposive layout
-* Pagination
-* Syntax highlighting
-* Social links
-* Tags listing page
-* Categories listing page
-* Google Analytics integration
-* Disqus integration
+Optionally you can use:
 
----
+ - [Disqus](http://disqus.com) as a comments system;
+ - [Google Analytics](http://www.google.com/analytics/);
+ - [Yandex Metrica](http://metrica.yandex.com);
+ - Blog tags;
+ - Share buttons.
 
-### Install and Test
+All these features could be set up in `_config.yml`. Also you can have social icons which could lead to your social acounts. It uses font-awesome, so you can have any icon you want to any social profile. Out-of-the box it has: LinkedIn, GitHub, StackOverflow, LastFm, Instagram. And you can easily add more by adding new style in `theme.css` and setting it in `_config.yml`.
 
-1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
-2. Enter the folder: `cd jekyll-uno/`
-3. If you don't have bundler installed: `gem install bundler`
-3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `bundle exec jekyll serve --watch`
+Installation
+==
 
-Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+If you dont't have your own blog you can clone this repository and put your articles in a `_posts` folder.
+If you already have your own blog then I think you can clone this repository and copy-paste content keeping your `_posts` folder.
 
----
+After you will have to set up your `_config.yml`
 
-### Demo and Download
+License
+=======
 
-[Demo](http://joshgerdes.com/jekyll-uno/)
-[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
+The content of this theme is distributed and licensed under a
+[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
 
-![jekyll-uno - free Jekyll theme](/screenshot.png)
+    This license lets others distribute, remix, tweak, and build upon your work,
+    even commercially, as long as they credit you for the original creation. This
+    is the most accommodating of licenses offered. Recommended for maximum
+    dissemination and use of licensed materials.
 
----
+In other words: you can do anything you want with this theme on any site, just please
+provide a link to the original theme on github.
 
-### Copyright and license
+This theme includes the following files which are the properties of their
+respective owners:
 
-It is under [the MIT license](/LICENSE).
+* js/bootstrap.min.js - [bootstrap](http://getbootstrap.com)
+* css/bootstrap.min.css - [bootstrap](http://getbootstrap.com)
+* js/jquery.min.js - [jquery](https://jquery.com)
