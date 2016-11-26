@@ -1,21 +1,21 @@
 ### Site info:
-title: Freshman21
-tagline: Another Jekyll theme, Freshman twenty-first
-author: Lijia Yu
-email: yu@lijiayu.net
-description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
-keywords: "Jekyll, theme, Freshman21"
+title: Gordon Brown's Blog
+tagline: Bloggin about C++, game dev, interactive narrative and heterogeneous computing
+author: Gordon Brown
+email: aerialmantis@gmail.com
+description: "Add description"
+keywords: "C++, GameDev, Events"
 baseurl: ""
 url: "https://aerialmantis.github.io"
 locale: en_US
 
 ### Personal info and site tools info:
-twitter_username: yulijia
-github_username:  yulijia
-disqus_shortname: freshman21
+twitter_username: aerialmantis
+github_username:  aerialmantis
+disqus_shortname: 
 favicon:     "/images/favicon.ico"
-aboutme: Hi, this is Lijia Yu. I made the Freshman21 theme. Please enjoy it. # these are shown on aboutme-sidebar.
-aboutme_photo: https://i.imgur.com/Mdc4szJl.jpg# your photo.
+aboutme: Add about me
+aboutme_photo: https://aerialmantis.github.io/images/profile-pic.jpg
 google_analytics_key: UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
 
 
@@ -137,12 +137,9 @@ locales:
 ### your Blogroll info, only name can shown on the page.
 
 Blogroll:
-      - name: Freshman
+      - name: AerialMantis
         href: https://aerialmantis.github.io
-        title: Another Jekyll blog theme
-      - name: author's website
-        href: https://aerialmantis.github.io
-        title: Lijia Yu's website
+        title: Gordon Brown's Blog
 
 
 ### Build settings
