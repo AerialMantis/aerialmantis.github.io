@@ -6,7 +6,7 @@ email: yu@lijiayu.net
 description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
 keywords: "Jekyll, theme, Freshman21"
 baseurl: ""
-url: "https://aerialmantis.github.io
+url: "https://aerialmantis.github.io"
 locale: en_US
 
 ### Personal info and site tools info:
@@ -138,10 +138,10 @@ locales:
 
 Blogroll:
       - name: Freshman
-        href: http://yulijia.net/freshman
+        href: https://aerialmantis.github.io
         title: Another Jekyll blog theme
       - name: author's website
-        href: http://yulijia.net/
+        href: https://aerialmantis.github.io
         title: Lijia Yu's website
 
 
