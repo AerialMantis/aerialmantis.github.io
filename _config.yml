@@ -41,8 +41,8 @@ liquid:
 timezone: Etc/GMT0
 
 # Blog Address configs
-baseurl: "/blog"
-url: "https://mlibre.github.io"
+baseurl: ""
+url: "https://aerialmantis.github.io"
 #
 # baseurl: ""
 # url: "http://localhost:4000"
