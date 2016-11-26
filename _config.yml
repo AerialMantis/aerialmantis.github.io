@@ -5,7 +5,7 @@ description: "Gordon Brown blogging about C++, game dev, heterogeneous computing
 
 # Url is currently only used only for the RSS feed in feed.xml
 url: https://aerialmantis.github.io
-#url: http://localhost:4000
+# url: http://localhost:4000
 
 # For a project page here should be a project name. Otherwise (for user's/organizaion's page leave it empty)
 baseurl: ""
