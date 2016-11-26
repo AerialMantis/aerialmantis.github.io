@@ -1,36 +1,19 @@
 ---
-layout: page
+title:
+description:
+author: mlibre
 ---
+<!doctype html>
+<html>
 
-{% for post in site.posts limit:10 %}
-  <h2 class="post-title">
-    <a href="{{post.url | prepend:site.baseurl | prepend:site.url}}">
-      {{ post.title }}
-    </a>
-  </h2>
+<head>
+    <title>{{site.title}}</title>
+    {% seo title=false %}
+</head>
 
-  <div class="post-meta">
-  <div class="post-time">
-    <i class="fa fa-calendar"></i>
-    <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date_to_string }}</time>
-  </div>
-  <ul>
-    {% for tag in post.tags %}
-    <li><a href="{{site.baseurl | prepend:site.url}}/tag/{{ tag }}">{{ tag }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<body>
+    <a href="en">blog in english</a>
+    <a href="fa">بلاگ به زبان فارسی</a>
+</body>
 
-  <div class="post-descr">
-    <p>
-      {{ post.description }}
-    </p>
-  </div>
-  {% endfor %}
-
-
-<div class="post-footer">
-  <div class="column-full">
-    <h3><a href="{{ '/archive.html' | prepend: site.baseurl | prepend: site.url }}">Blog archive</a></h3>
-  </div>
-</div>
+</html>
