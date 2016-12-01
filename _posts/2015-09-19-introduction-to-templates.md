@@ -2,7 +2,7 @@
 layout: post
 title:  "Introduction to Templates"
 date:   2015-09-19 12:00:00 +0000
-categories: events gamedev
+categories: C++ templates
 ---
 
 C++ template programming is difficult, the instantiation process is complex and template code can often be difficult to debug and sometimes even read. However it can also be extremely powerful for creating generic code that can dramatically reduce duplication and improve the runtime performance of your application.

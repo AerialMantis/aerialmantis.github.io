@@ -2,7 +2,7 @@
 layout: post
 title:  "Template Instantiation"
 date:   2015-11-22 12:00:00 +0000
-categories: events gamedev
+categories: c++ templates
 ---
 
 Have you ever encountered strange cryptic errors messages involving deduction or substitution failures in your C++ templates and had a really tough time debugging them? This is a very common problem and probably the biggest that templates suffer from, the template instantiation process is very complex and contains various stages at which errors can occur. In my previous post I gave a brief example of template instantiation, in this post I break down the stages of the template instantiation process and explain what is happening under the hood.
