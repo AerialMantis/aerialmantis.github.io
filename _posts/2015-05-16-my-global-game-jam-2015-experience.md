@@ -2,7 +2,7 @@
 layout: post
 title:  "My Global Game Jam 2015 Experience"
 date:   2015-05-16 12:00:00 +0000
-categories: events gamedev
+categories: events
 ---
 
 Last month some friends and I spent the weekend participating in the Global Game Jam 2015. The [Global Game Jam][global-game-jam] is is a yearly event held in many different locations all over the world where game dev enthusiasts come together in teams in order to make a game in 48 hours under a common theme. The games that are developed during the jam are generally video games but it does also see other forms of games like board games, card games and social media games as well. At the end of the 48 hours everyone gets a chance to play each others games and vote for their favorite games in categories such as best art or best design. The experience of a game jam is probably best described as the full game development process; including game design, content creation and crunch time, condensed into 48 hours.

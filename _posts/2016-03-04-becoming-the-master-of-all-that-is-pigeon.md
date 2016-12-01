@@ -2,7 +2,7 @@
 layout: post
 title:  "Becoming the Master of all that is Pigeon"
 date:   2015-05-16 12:00:00 +0000
-categories: events gamedev
+categories: events
 ---
 
 The Global Game Jam had come around again and as with last year, some friends and I attended the Glasgow Global Game Jam at Glasgow Caledonia University, where we created our game �B.F. Skinner: Pigeon Herder�.

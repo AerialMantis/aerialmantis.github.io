@@ -2,7 +2,7 @@
 layout: post
 title:  "Template Meta Programming"
 date:   2015-11-22 12:00:00 +0000
-categories: c++ templates
+categories: c++
 ---
 
 One of the most powerful techniques that C++ templates provide is the ability to perform compile-time computations in order to create more generic and optimised code; this is known as template meta programming (TMP).
