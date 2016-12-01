@@ -1,10 +1,17 @@
-<div class="col-sm-2">
-{% include Aboutme.html %}
-{% include Copyright_Notice.html %}
-{% include Recent_Posts.html %}
-{% include Categories.html %}
-{% include Tags.html %}
-{% include Blogroll.html %}
-{% include Archives.html %}
+<div class="sidebar ">
+  <h2>Recent Posts</h2>
+  <ul>
+    {% for post in site.posts limit:5 %}
+    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
 
+<div class="sidebar">
+  <h2>Tags</h2>
+  <ul>
+    {% for tag in site.tags %}
+      <li><a href="{{ site.baseurl }}/tag/{{ tag[0] }}">{{ tag[0] }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
