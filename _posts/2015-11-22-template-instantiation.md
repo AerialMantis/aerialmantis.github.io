@@ -15,7 +15,7 @@ A template declaration and it’s associated definition do not generate any code
 
 When a template declaration is referenced in a context which requires an instance of that group, a non-generic declaration is constructed with a particular set of arguments. This process is often broadly referred to as ‘template instantiation’, however there are multiple stages involved and understanding these stages can be invaluable when writing and particularly debugging template code:
 
-![alt text](https://github.com/AerialMantis/aerialmantis.github.io/raw/master/images/template-instantiation.jpg "Game Jam 2015"){:width="100%"}
+![alt text](https://github.com/AerialMantis/aerialmantis.github.io/raw/master/images/template-instantiation.png "Game Jam 2015"){:width="100%"}
 
 During this process the template declaration being instantiated can either be a regular template declaration, referred to as the primary template, or an explicit template specialization. During this process the resulting non-generic instance is represented by it’s template id, that in broadest terms is treated by the compiler as a regular non-template declaration.
 
