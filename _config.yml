@@ -3,7 +3,7 @@ title: "AerialMantis On<br>C++, Gamedev, Heterogeneous Computing"
 author: "Gordon Brown"
 description: "This is a blog about C++, C++ templates, gamedev, and heterogeneous computing."
 keywords: "C++, Template, Gamedev, Heterogeneous"
-biography: "I am a software develop at <a href='http://www.codeplay.com'>Codeplay Software</a>, where I work on contributing to the SYCL open standard for heterogeneous computing and developing codeplay's implmentation. I am a C++ and game dev enthusiast."
+biography: "I am a software developer at <a href='http://www.codeplay.com'>Codeplay Software</a>, where I work on SYCL; an open standard C++ programming model for heterogeneous systems. I am an active contributor to the SYCL and the C++ standards. I am a C++ and game dev enthusiast."
 colophon: "© MMXIII — MMXVI by Hugo Sereno Ferreira.<br>Content available under <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons (BY-NC-SA)</a> unless otherwise noted.<br>This site is hosted at <a href='https://pages.github.com/'>Github Pages</a> and created with <a href='http://jekyllrb.com/'>Jekyll</a>."
 
 baseurl: ""

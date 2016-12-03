@@ -9,7 +9,7 @@ The Global Game Jam had come around again and as with last year, some friends an
 
 The [Global Game Jam][global-game-jam] is a yearly event held in many different locations all over the world where game dev enthusiasts come together in teams in order to make a game in 48 hours under a common theme. The games that are created during the jam are generally video games but it does also see other kinds of games like board games, card games and social media games as well. The experience of a game jam is probably best described as the full game development process; including game design, content creation and crunch time, condensed into 48 hours.
 
-![alt text](https://github.com/AerialMantis/aerialmantis.github.io/raw/master/images/game-jam-2016.jpg "Game Jam 2016"){:width="700px"}
+![alt text](https://github.com/AerialMantis/aerialmantis.github.io/raw/master/images/game-jam-2016.jpg "Game Jam 2016"){:width="100%"}
 
 A couple of my friends arrived early in the afternoon to pick out a good spot and get set up, and despite some trouble with electricity supply we managed to get a really good set-up. The rest of us arrived just as the theme was announced, which this year was 'ritual'.
 
@@ -19,7 +19,7 @@ The first was an idea based on the [research of B.F. Skinner][b-f-skinner], who 
 
 The second was an idea in which you played an overlord controlling a group of minions and by issuing commands the player would have the minions perform rituals.
 
-![alt text](https://github.com/AerialMantis/aerialmantis.github.io/raw/master/images/pigeon-herder.jpg "B.F Skinner: Pigeon Herder"){:width="700px"}
+![alt text](https://github.com/AerialMantis/aerialmantis.github.io/raw/master/images/pigeon-herder.jpg "B.F Skinner: Pigeon Herder"){:width="100%"}
 
 The combination of these two ideas would result in the concept for our final game; [B.F Skinner: Pigeon Herder][pigeon-herder], in which a kit of pigeons perform random movements and actions and the player must strategically feed the pigeons in order to reinforce the behaviour they want when they see it in order to move the pigeons to a particular location or have them perform a particular pattern of behaviours. The difficulty for the player comes in influencing the behaviour they want to see in the pigeons while not influencing other behaviours or other pigeons.
 
