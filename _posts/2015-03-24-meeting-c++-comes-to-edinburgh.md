@@ -5,7 +5,7 @@ date:   2015-03-24 12:00:00 +0000
 categories: events
 ---
 
-On the 17th of March I attended the first meeting of C\+\+ Edinburgh, a new Edinburgh based user group of Meeting C\+\+. [Meeting C++][meeting-cpp] is an independent C\+\+ conference that has user groups all over the world, that arrange regular mini-conferences and events.
+On the 17th of March I attended the first meeting of C\+\+ Edinburgh, a new Edinburgh based user group of Meeting C\+\+. [Meeting C++][meeting-cpp-website] is an independent C\+\+ conference that has user groups all over the world, that arrange regular mini-conferences and events.
 
 C\+\+ Edinburgh has been organised by [Joseph Mansfield][joe-twitter], with the aim of bringing local C\+\+ developers and enthusiasts together to discuss ideas and share knowledge. The new user group is off to a great start with 33 people attending the first meeting that consisted of talks by Joseph and myself on the relevance of C\+\+ and an introduction to features of the C\+\+11 standard. The user group is sponsored by [Codeplay Software][codeplay-website] and [Toshiba Medical][toshiba-website], two local software companies that are heavily involved in C\+\+ development.
 
