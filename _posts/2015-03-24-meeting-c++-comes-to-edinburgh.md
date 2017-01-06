@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Meeting C++ Commes to Edinburgh"
+title:  "Meeting C++ Comes to Edinburgh"
 date:   2015-03-24 12:00:00 +0000
 categories: events
 ---
