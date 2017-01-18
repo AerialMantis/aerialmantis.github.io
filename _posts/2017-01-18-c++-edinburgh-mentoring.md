@@ -25,7 +25,7 @@ If you are looking for guidance, whether you are a high-school or university stu
 
 [cpp-edinburgh-website]: http://cppedinburgh.uk/
 [stephanie-blog]: http://stephaniehurlburt.com/blog/2016/11/14/list-of-engineers-willing-to-mentor-you
-[edi-email]: cppedinburgh@gmail.com
+[edi-email]: mailto:cppedinburgh@gmail.com
 [edi-twitter]: https://twitter.com/cppedinburgh
 [mentor-list]: http://cppedinburgh.uk/mentorships.html
 [mentor-form]: https://cppedinburgh.typeform.com/to/YCAPwf
