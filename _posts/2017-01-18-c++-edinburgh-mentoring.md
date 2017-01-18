@@ -12,7 +12,7 @@ categories: events
 
 
 
-In my spare time, I am one of the co-organisers of [C++ Edinurgh][cpp-edinburgh-website]. We recently read a [blog post][stephanie-blog] by Stephanie Hurlburt, which compiled a list of software engineers who would be willing to mentor others in a range of software and hardware areas. This gave us the idea to create something similar, though targeted at the Edinburgh C\+\+ community.
+In my spare time, I am one of the co-organisers of [C++ Edinburgh][cpp-edinburgh-website]. We recently read a [blog post][stephanie-blog] by Stephanie Hurlburt, which compiled a list of software engineers who would be willing to mentor others in a range of software and hardware areas. This gave us the idea to create something similar, though targeted at the Edinburgh C\+\+ community.
 
 
 
