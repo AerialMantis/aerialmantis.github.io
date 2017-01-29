@@ -17,21 +17,21 @@ This may seam very trivial, however one of the biggest problems that many; mysel
 
 This instantiation is performed at compile time, allowing you to make use of several useful techniques involving compile time evaluation of template expressions, this is what’s known as template meta programming.
 
-There are five different kinds of template that can be defined in C++: class templates, function and member function templates, template aliases (from C++11 onwards) and variable templates (from C++14 onwards).
+There are five different kinds of template that can be defined in C++: class templates, function and member function templates, template aliases (from C++11 onwards) and variable templates (from C/+/+14 onwards).
 
 {% highlight cpp %}
 /* Class template. */
 template <typename T> class my_class;
- 
+
 /* Function template. */
 template <typename T> void foo(T param);
- 
+
 /* Member function template. */
 class my_class { template <typename T> void foo(T param); }
- 
+
 /* Template alias (C++11). */
-template <typename T> using alias = T::type;
- 
+template <typename T> using alias = typename T::type;
+
 /* Variable template (C++14). */
 template <typename T> T var = T(5);
 {% endhighlight cpp %}
@@ -41,16 +41,16 @@ Additionally there are three different kinds of template parameters that a templ
 {% highlight cpp %}
 /* Type template parameter. */
 template <typename T> void typename_param();
- 
+
 /* Integral non-type template parameter. */
 template <int T> void integral_param();
- 
+
 /* Enum class non-type template parameter. */
 template <enum_class T> void enum_class_param();
- 
+
 /* Const char array non-type parameter. */
 template <const char* T> void string_param();
- 
+
 /* Template template parameter. */
 template <template <typename T> typename T> void template_param();
 {% endhighlight cpp %}
