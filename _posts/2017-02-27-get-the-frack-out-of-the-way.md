@@ -55,7 +55,7 @@ I've put together some tips for people who are still on te fence about taking pa
 
 [love-2d]: https://love2d.org/
 
-[source]: https://github.com/mulingkittens
+[source]: https://github.com/adurdin/ggj2017
 
 [extra-credits]: https://www.youtube.com/watch?v=2xfxx27HbM4
 
