@@ -5,9 +5,9 @@ date:   2015-11-22 12:00:00 +0000
 categories: c++
 ---
 
-Have you ever encountered strange cryptic errors messages involving deduction or substitution failures in your C++ templates and had a really tough time debugging them? This is a very common problem and probably the biggest that templates suffer from, the template instantiation process is very complex and contains various stages at which errors can occur. In my previous post I gave a brief example of template instantiation, in this post I break down the stages of the template instantiation process and explain what is happening under the hood.
+Have you ever encountered strange cryptic errors messages involving deduction or substitution failures in your C\+\+ templates and had a really tough time debugging them? This is a very common problem and probably the biggest that templates suffer from, the template instantiation process is very complex and contains various stages at which errors can occur. In my previous post I gave a brief example of template instantiation, in this post I break down the stages of the template instantiation process and explain what is happening under the hood.
 
-All code samples that I include in these posts can be found [here][cpp-samples].
+If you're still new to C\+\+ templates you may want to check out my [previous post][introduction-to-templates] on an introduction to templates.
 
 ## Template Instantiation
 
@@ -44,9 +44,9 @@ function<int>();
 
 Name lookup is not explicitly part of the instantiation process, however there are some aspects of it that can directly effect the way in which instantiation is triggered, therefore it is important to mention.
 
-One of these is two-phase lookup; the principle that a C++ compiler will compile your source code in two phases. In the first phase, all code is parsed and checked for general syntax, however only non template dependent names are compiled fully. In the second phase, template dependent names are re-compiled once the template parameters those names depend on have been substituted.
+One of these is two-phase lookup; the principle that a C\+\+ compiler will compile your source code in two phases. In the first phase, all code is parsed and checked for general syntax, however only non-dependent names are compiled fully. In the second phase, dependent names are re-compiled once the template parameters those names depend on have been substituted.
 
-A template dependent name is one one that contains a non-substituted template parameter from a surrounding scope, such as a function or class template parameter.
+A dependent name is one one that contains a non-substituted template parameter from a surrounding scope, such as a function or class template parameter.
 
 As a simple example, consider the following function template:
 
@@ -54,20 +54,20 @@ As a simple example, consider the following function template:
 template <typename T>
 void bar(T var) {
   /* The lookup for the first call is done in phase
-  one as it does not contain any template dependent
+  one as it does not contain any dependent
   types. */
   foo(10);
  
   /* The lookup for the second call is deferred to
-  phase two as it contains the template dependent
+  phase two as it contains the dependent
   type 'T' in its argument 'var'. */
   foo(var);
 }
 {% endhighlight cpp %}
 
-The first function call takes as its argument, the integer literal ’10’, as this argument is non template dependent, the lookup can be performed immediately in the first phase. The second function call takes as it’s argument the function parameter ‘var’, as this argument is dependent on the template parameter ‘T’, the lookup must be deferred to the second phase, once the function template function ‘bar’ has been instantiated and ‘T’ has been substituted.
+The first function call takes as its argument, the integer literal `10`, as this argument is non-dependent, the lookup can be performed immediately in the first phase. The second function call takes as it’s argument the function parameter `var`, as this argument is dependent on the template parameter `T`, the lookup must be deferred to the second phase, once the function template function ‘bar’ has been instantiated and `T` has been substituted.
 
-It is worth noting however, that not all C++ compilers implement two-phase lookup fully, some still adopt an early implementation method in which entire template definitions are deferred to the second phase, which can sometimes lead to invalid C++ code being accepted by the compiler, and therefore causing trouble for cross platform applications.
+It is worth noting however, that not all C\+\+ compilers implement two-phase lookup fully, some still adopt an early implementation method in which entire template definitions are deferred to the second phase, which can sometimes lead to invalid C\+\+ code being accepted by the compiler, and therefore causing trouble for cross platform applications.
 
 ## Argument Deduction and Substitution
 
@@ -96,7 +96,7 @@ int main () {
 }
 {% endhighlight cpp %}
 
-Here the template parameter ‘T’ is determined from the explicit template explicit argument ‘float’.
+Here the template parameter `T` is determined from the explicit template explicit argument `float`.
 
 ## Deduction of Non-Explicit Template Arguments
 
@@ -115,7 +115,7 @@ int main () {
 }
 {% endhighlight cpp %}
 
-Here the template argument ‘T’ is determined from the function parameter ‘false’.
+Here the template argument `T` is determined from the function parameter `false`.
 
 Next the compiler will attempt to deduce each template argument from from a default argument if one is available. For example:
 
@@ -132,7 +132,7 @@ int main () {
 }
 {% endhighlight cpp %}
 
-Here the template argument ‘T’ is determined from a default argument as ‘int’.
+Here the template argument `T` is determined from a default argument as `int`.
 
 Note that unlike default function arguments, default template arguments do not have to be at the end of the parameter list.
 
@@ -156,7 +156,7 @@ If the definition of the template being instantiated is not available at this po
 
 To do this he compiler will substitute all uses of the template declaration’s parameters within the associated definition, with the arguments of the template id, to construct a definition for the template id.
 
-For example, consider a function template with three template parameters typename ‘S’, typename ‘T’ and int ‘D’ that defines a group of functions that take a parameter of type ‘T’, construct a pointer of type ‘S’, passing the parameter and the value of ‘D’ to the constructor and then returning the pointer:
+For example, consider a function template with three template parameters typename `S`, typename `T` and int `D` that defines a group of functions that take a parameter of type `T`, construct a pointer of type `S`, passing the parameter and the value of `D` to the constructor and then returning the pointer:
 
 {% highlight cpp %}
 template <typename S, typename T, int D = 5>
@@ -175,7 +175,7 @@ int main() {
 }
 {% endhighlight cpp %}
 
-When the function template is specialized a template id is constructed where, typename ‘S’ is specified explicitly as the type ‘foo’, typename ‘T’ is deduced as the type ‘float’ form the argument ‘10.0f’ and int ‘D’ is deduced from the default argument as ‘5’.
+When the function template is specialized a template id is constructed where, typename `S` is specified explicitly as the type `foo`, typename `T` is deduced as the type ‘float’ form the argument `10.0f` and int `D` is deduced from the default argument as `5`.
 
 Now when the function template definition is instantiated all uses of the templates parameters within the definition are substituted with the associated arguments from the template id.
 
@@ -194,6 +194,7 @@ Once the instantiation process is done the template id has a valid declaration a
 
 After argument deduction and substitution, specialization and instantiation has been performed for each template declaration returned by name lookup the compiler then performs overload or specialization resolution. This is the process by which the compiler chooses the best candidate from the function or member function overloads or from the class, alias or variable specializations and if no candidate can be chosen the compiler triggers an ambiguity error.
 
+[introduction-to-templates]: http://www.aerialmantis.co.uk/blog/2015/09/19/introduction-to-templates/
 [cpp-samples]: https://github.com/AerialMantis/cpp_samples/tree/master/blog
 [sfinae]: http://en.cppreference.com/w/cpp/language/sfinae
 [odr]: http://en.cppreference.com/w/cpp/language/definition

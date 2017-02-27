@@ -5,19 +5,17 @@ date:   2015-09-19 12:00:00 +0000
 categories: c++
 ---
 
-C++ template programming is difficult, the instantiation process is complex and template code can often be difficult to debug and sometimes even read. However it can also be extremely powerful for creating generic code that can dramatically reduce duplication and improve the runtime performance of your application.
+C\+\+ template programming is difficult, the instantiation process is complex and template code can often be difficult to debug and sometimes even read. However it can also be extremely powerful for creating generic code that can dramatically reduce duplication and improve the runtime performance of your application.
 
-When I was learning templates I found many concepts difficult to grasp, however I understood them better after spending some time looking at templates from the perspective of the compiler. This lead me to write a series of blog posts; providing a bottom up approach to template programming, starting with an introduction to instantiation. In this post I aim to introduce C++ templates and describe a simple example of template instantiation in order to provide a foundation for later posts covering more advanced features.
-
-All of the code samples that I include in this and subsequent posts can be found [here][cpp-samples].
+When I was learning templates I found many concepts difficult to grasp, however I understood them better after spending some time looking at templates from the perspective of the compiler. This lead me to write a series of blog posts; providing a bottom up approach to template programming, starting with an introduction to instantiation. In this post I aim to introduce C\+\+ templates and describe a simple example of template instantiation in order to provide a foundation for later posts covering more advanced features.
 
 ## What are Templates
 
-This may seam very trivial, however one of the biggest problems that many; myself included, encounter when starting out with C++ templates stems from understanding what a template is and therefore understanding how to approach them. A template is not a class or a function in itself, it’s a generic blueprint with a list of parameters that defines a group of types or a group of functions. This means that no code is generated from a template alone, it must first be instantiated with suitable template arguments to create an actual class or function.
+This may seam very trivial, however one of the biggest problems that many; myself included, encounter when starting out with C\+\+ templates stems from understanding what a template is and therefore understanding how to approach them. A template is not a class or a function in itself, it’s a generic blueprint with a list of parameters that defines a group of types or a group of functions. This means that no code is generated from a template alone, it must first be instantiated with suitable template arguments to create an actual class or function.
 
 This instantiation is performed at compile time, allowing you to make use of several useful techniques involving compile time evaluation of template expressions, this is what’s known as template meta programming.
 
-There are five different kinds of template that can be defined in C++: class templates, function and member function templates, template aliases (from C++11 onwards) and variable templates (from C/+/+14 onwards).
+There are five different kinds of template that can be defined in C\+\+: class templates, function and member function templates, alias templates (from C\+\+11 onwards) and variable templates (from C\+\+14 onwards).
 
 {% highlight cpp %}
 /* Class template. */
@@ -29,10 +27,10 @@ template <typename T> void foo(T param);
 /* Member function template. */
 class my_class { template <typename T> void foo(T param); }
 
-/* Template alias (C++11). */
+/* Template alias (C\+\+11). */
 template <typename T> using alias = typename T::type;
 
-/* Variable template (C++14). */
+/* Variable template (C\+\+14). */
 template <typename T> T var = T(5);
 {% endhighlight cpp %}
 
@@ -66,7 +64,7 @@ It’s important to note here the terminology for template parameters and argume
 
 ## Template Instantiation
 
-Instantiation is the core concept of C++ templates; it is the mechanism by which a class or function is created from it’s respective template.
+Instantiation is the core concept of C\+\+ templates; it is the mechanism by which a class or function is created from it’s respective template.
 
 The general template instantiation model is the same for any template, however there are different forms of instantiation and there are some special rules and exceptions surrounding specific kinds of templates.
 
@@ -83,7 +81,7 @@ void swap(T &a, T &b) {
 
 As the function template swap itself is simply a parametrized blueprint, it does not generate any code on it’s own. In order to generate a function from the template, it must be instantiated. The template instantiation process can be triggered in two ways: it can be triggered implicitly; whenever a template declaration is referenced in a context where a definition is required, or explicitly; when an explicit template instantiation directive is used.
 
-A call to the function template swap is made with two function parameters of type ‘int’, triggering implicit instantiation of the template:
+A call to the function template `swap` is made with two function parameters of type `int`, triggering implicit instantiation of the template:
 
 {% highlight cpp %}
 int main() {
@@ -94,7 +92,7 @@ int main() {
 
 Before the template can be instantiated, it must first be specialized; this is the process by which each parameter of a template declaration is substituted with a template argument to construct a non-generic template specialization. For both implicit and explicit instantiation, this process is performed as an implicit pre-requisite, however the specialization process can also be triggered explicitly; when an explicit template specialization directive is used.
 
-As the function template swap is called with two ‘int’ parameters, the typename argument ‘T’ is deduced as type ‘int’ and therefore the function parameters ‘T&’ are substituted with ‘int&’:
+As the function template swap is called with two `int` parameters, the typename argument `T` is deduced as type `int` and therefore the function parameters `T&` are substituted with `int&`:
 
 {% highlight cpp %}
 /* Function template. */
@@ -104,7 +102,7 @@ void swap(T &a, T &b);                int swap(int &a, int &b);
 
 Once the template specialization has been constructed the function definition can be instantiated; this is the process by which a template specialization is used to compile it’s associated template definition, substituting in the template arguments from the template specialization creating an instantiated function definition.
 
-Once the template specialization for the function template swap has been constructed, the function definition is then compiled, substituting any use of the typename ‘T’ with ‘int’:
+Once the template specialization for the function template swap has been constructed, the function definition is then compiled, substituting any use of the typename `T` with `int`:
 
 {% highlight cpp %}
 /* Function template. */
@@ -116,6 +114,7 @@ void swap(T &a, T &b) {             void swap(int &a, int &b) {
 } 
 {% endhighlight cpp %}
 
-The next post will look at the implicit instantiation process seen here in more detail.
+My [next post][template-instantiation] will look at the implicit instantiation process seen here in further detail.
 
 [cpp-samples]: https://github.com/AerialMantis/cpp_samples/tree/master/blog
+[template-instantiation]: http://www.aerialmantis.co.uk/blog/2015/11/22/template-instantiation/
