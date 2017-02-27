@@ -25,7 +25,7 @@ My task this year was to write the shaders for rendering the seismic waves and t
 
 Unfortunately, we lost another member of our team during the jam, Luke took ill on the evening of the first day and despite trying to continue on had to go home.
 
-We managed to pull everything together just in time and the finished game looked pretty good and was pretty fun to play, so I call that a win. We were missing a few things such as general balancing and feedback improvements, controller input scoreboards etc, though Andy has been hard at work since the jam ading these extra features and polishing everything off. If you'd like to play our game you can check it out [here][source].
+We managed to pull everything together just in time and the finished game looked pretty great I think and was fun to play too, so I call that a win. We were missing a few things such as general balancing and feedback improvements, controller input, scoreboards etc, though Andy has been hard at work since the jam ading these extra features and polishing everything off. If you'd like to play our game you can check it out [here][source].
 
 ![alt text](https://github.com/AerialMantis/aerialmantis.github.io/raw/master/images/gg17-compilation-2.jpg "Game Jam 2017"){:width="100%"}
 
