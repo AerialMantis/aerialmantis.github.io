@@ -11,7 +11,7 @@ It was January again which meant it was time for our yearly trip to Glasgow Cale
 
 The [Global Game Jam][global-game-jam] is a yearly event held in many different locations all over the world where game dev enthusiasts come together in teams in order to make a game in 48 hours under a common theme. The games that are created during the jam are generally video games but it does also see other kinds of games like board games, card games and social media games as well. The experience of a game jam is probably best described as the full game development process; including game design, content creation and crunch time, condensed into 48 hours.
 
-### What the Frack?
+## What the Frack?
 
 This year I learnt my lesson and I took the Friday and Monday surrounding the game jam off work, this meant I could get a long rest before hand. Despite this we didn't arrive as early as we have in the past, though we were still able to find a good spot, setting up camp in a booth with white boards.
 
@@ -29,7 +29,7 @@ We managed to pull everything together just in time and the finished game looked
 
 ![alt text](https://github.com/AerialMantis/aerialmantis.github.io/raw/master/images/gg17-compilation-2.jpg "Game Jam 2017"){:width="100%"}
 
-### Tips for those Considering a Jam
+## Tips for those Considering a Jam
 
 The [keynote][extra-credits] this year gave tips for new jammers, and this gave me the idea to share some tips for those who may be considering taking part in a game jam but may be put off by certain aspects of it.
 
