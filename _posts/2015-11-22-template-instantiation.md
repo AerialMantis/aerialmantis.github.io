@@ -175,7 +175,7 @@ int main() {
 }
 {% endhighlight cpp %}
 
-When the function template is specialized a template id is constructed where, typename `S` is specified explicitly as the type `foo`, typename `T` is deduced as the type ‘float’ form the argument `10.0f` and int `D` is deduced from the default argument as `5`.
+When the function template is specialized a template id is constructed where, typename `S` is specified explicitly as the type `foo`, typename `T` is deduced as the type 'float' form the argument `10.0f` and int `D` is deduced from the default argument as `5`.
 
 Now when the function template definition is instantiated all uses of the templates parameters within the definition are substituted with the associated arguments from the template id.
 

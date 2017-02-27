@@ -68,7 +68,7 @@ Instantiation is the core concept of C\+\+ templates; it is the mechanism by whi
 
 The general template instantiation model is the same for any template, however there are different forms of instantiation and there are some special rules and exceptions surrounding specific kinds of templates.
 
-As a simple example consider this function template that defines a generic group of functions that take two reference parameters of the template argument type ‘T’ and swaps their values:
+As a simple example consider this function template that defines a generic group of functions that take two reference parameters of the template argument type 'T' and swaps their values:
 
 {% highlight cpp %}
 template <typename T>
