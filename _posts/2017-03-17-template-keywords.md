@@ -98,7 +98,7 @@ struct foo : public foo_base<T> {
 };
 ```
 
-This might seem odd, but there are cases due to inheritance where the full type of the this pointer cannot be known until the class template is specialised, such as when the type inherits from another class template.
+This might seem odd, but there are cases due to inheritance where the full type of the this pointer cannot be known until the class template is specialised, such as when the type has a dependant base class.
 
 For those interested in the C\+\+ standardese, the section which describes this rule is as follows:
 
@@ -136,8 +136,7 @@ If you were to compile this code as it is, you would get an error for the line `
 
 This error is better than the previous one as it tells you what to do, essentially add the `typename` keyword immediately before the expression. But why is this necessary? Again the reason for this can be found in the two-phase name lookup.
 
-When the compiler parses code like this involving a dependant type, in this case, `type_or_value<T>` it cannot know whether the member `tv` resolves to a type or a non-type. Therefore the compiler will assume non-type and it assumes the latter. In order to instruct the compiler that `tv` is, in fact, resolves to a type it is necessary to add the `typename` keyword immediately before the expression:
-
+When the compiler parses code like this involving a dependant type, in this case, `type_or_value<T>` it cannot know whether the member `tv` resolves to a type or a non-type and assumes the latter. In order to instruct the compiler that `tv` is, in fact, resolves to a type it is necessary to add the `typename` keyword immediately before the expression:
 
 ```cpp
 template <typename T>
