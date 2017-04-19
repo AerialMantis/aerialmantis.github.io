@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Game Dev Diary 2: Modelling in Blender"
+title:  "Game Dev Diary 2: 3D Modelling in Blender"
 date:   2017-04-16 12:00:00 +0000
 categories: gamedev
 ---
