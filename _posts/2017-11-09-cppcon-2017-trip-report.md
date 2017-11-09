@@ -3,6 +3,7 @@ layout: post
 title:  "CppCon2017 Trip Report"
 date:   2017-11-09 12:00:00 +0000
 categories: events
+redirect_from: "/blog/2017/10/09/cppcon-2017-trip-report/"
 ---
 
 Last month I flew out to Seattle for CppCon 2017 with fellow Codeplayer's Michael Wong and Christopher Di Bella. This was my second time at CppCon and as with the previous year it was a real pleasure to be there, I saw a lot of familiar faces and digested a lot of great content.
