@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CppCon2017 Trip Report"
-date:   2017-10-09 12:00:00 +0000
+date:   2017-11-09 12:00:00 +0000
 categories: events
 ---
 
