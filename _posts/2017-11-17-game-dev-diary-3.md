@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Game Dev Diary 3: Creting a Scene in Blender"
+title:  "Game Dev Diary 3: Creating a Scene in Blender"
 date:   2017-11-17 12:00:00 +0000
 categories: gamedev
 ---
